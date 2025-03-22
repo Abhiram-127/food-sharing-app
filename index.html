@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Food Sharing Platform</h1>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('sharing')">Sharing</button>
+            <button class="tab-btn" onclick="showTab('supermarket')">Supermarket</button>
+            <button class="tab-btn" onclick="showTab('waste')">Waste</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="sharing" class="tab-content active">
+            <h2>Sharing</h2>
+            <p>Find and share food with people in need.</p>
+        </div>
+
+        <div id="supermarket" class="tab-content">
+            <h2>Supermarket</h2>
+            <p>Connect with supermarkets to donate excess food.</p>
+        </div>
+
+        <div id="waste" class="tab-content">
+            <h2>Waste</h2>
+            <p>Learn how to reduce food waste and recycle leftovers.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
