@@ -1,13 +1,12 @@
-function showTab(tabName) {
-    // Hide all tabs
-    const tabs = document.querySelectorAll(".tab-content");
-    tabs.forEach(tab => tab.classList.remove("active"));
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
 
-    // Remove active class from buttons
-    const buttons = document.querySelectorAll(".tab-btn");
-    buttons.forEach(button => button.classList.remove("active"));
-
-    // Show the selected tab and highlight the button
-    document.getElementById(tabName).classList.add("active");
-    event.target.classList.add("active");
-}
+    if (username === "" || password === "") {
+        alert("Please fill in both fields");
+    } else {
+        alert("Login Successful!");
+        // Here, you can add actual login handling logic
+    }
+});
