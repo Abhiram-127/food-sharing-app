@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Food</title>
+    <link rel="stylesheet" href="sharing.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Take Food</h1>
+        <div class="tabs">
+            <button onclick="window.location.href='sharing.html'">Give</button>
+            <button class="active">Take</button>
+        </div>
+
+        <div id="takeContent">
+            <h2>Select Food to Take</h2>
+            <form id="takeForm">
+                <label>Item:</label>
+                <select id="itemSelect" required>
+                    <option value="">Loading...</option>
+                </select><br>
+                
+                <label>Quantity:</label>
+                <input type="number" id="takeQuantity" min="1" required><br>
+
+                <button type="button" id="takeFoodButton">Go to Take Food</button>
+            </form>
+
+            <h3>Available Food</h3>
+            <ul id="availableFood"></ul>
+        </div>
+    </div>
+
+    <script src="take.js" defer></script>
+</body>
+</html>

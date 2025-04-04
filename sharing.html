@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Sharing</title>
+    <link rel="stylesheet" href="sharing.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Community Food Sharing</h1>
+        <div class="tabs">
+            <button id="giveTab" class="active">Give</button>
+            <button id="takeTab" onclick="window.location.href='take.html'">Take</button>
+        </div>
+
+        <!-- Give Section -->
+        <div id="giveContent">
+            <h2>Give Food</h2>
+            <form id="giveForm">
+                <label>Item:</label>
+                <select id="item">
+                    <option value="Rice">Rice</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Bread">Bread</option>
+                    <option value="Milk">Milk</option>
+                    <option value="Eggs">Eggs</option>
+                    <option value="Vegetables">Vegetables</option>
+                    <option value="Fruits">Fruits</option>
+                    <option value="Pulses">Pulses</option>
+                    <option value="Snacks">Snacks</option>
+                    <option value="Beverages">Beverages</option>
+                </select><br>
+
+                <label>Quantity:</label>
+                <input type="number" id="quantity" required><br>
+
+                <label>Expiry Date:</label>
+                <input type="date" id="expirydate" required><br>
+
+                <button type="submit">Add to List</button>
+            </form>
+
+            <h3>Food List</h3>
+            <ul id="foodList"></ul>
+        </div>
+
+        <!-- Take Section -->
+        <div id="takeContent" style="display: none;">
+            <h2>Take Food</h2>
+            <ul id="availableFood"></ul>
+        </div>
+    </div>
+
+    <script src="sharing.js" defer></script>
+</body>
+</html>
+
+
+

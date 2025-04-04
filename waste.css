@@ -1,0 +1,40 @@
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+/* Tab Buttons */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.active {
+    background-color:#ccc;
+    color: black;
+}
+
+.inactive {
+    background-color: #ccc;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: aquamarine;
+}
